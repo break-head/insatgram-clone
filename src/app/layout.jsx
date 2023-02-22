@@ -3,9 +3,13 @@ import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
-    <div>
-      <Header />
-      {children}
-    </div>
+    <html>
+      <body>
+        <div>
+          <Header />
+          {children}
+        </div>
+      </body>
+    </html>
   );
 }

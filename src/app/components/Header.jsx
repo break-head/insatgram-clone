@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HiOutlineSearch } from "react-icons/hi";
 
 export default function Header() {
   return (
@@ -20,6 +21,16 @@ export default function Header() {
             fill
           />
         </div>
+      </div>
+      <div className="relative mt-1">
+        <div className="absolute top-2 left-2">
+          <HiOutlineSearch className="h-5" />
+        </div>
+        <input
+          type="text"
+          placeholder="Search"
+          className="bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md"
+        />
       </div>
 
       <h1>Right Side</h1>
